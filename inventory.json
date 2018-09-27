@@ -1,0 +1,15 @@
+{
+  "neovim": {
+    "brew": [
+      "neovim"
+    ],
+    "symlink": [
+      {"from": "nvim/autoload", "to": "$HOME/.config/nvim/autoload"},
+      {"from": "nvim/plugged", "to": "$HOME/.config/nvim/plugged"},
+      {"from": "nvim/init.vim", "to": "$HOME/.config/nvim/init.vim"}
+    ],
+    "shell": [
+      {"run": "vim +PlugInstall +qall"}
+    ]
+  }
+}

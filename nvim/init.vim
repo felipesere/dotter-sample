@@ -30,10 +30,10 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'junegunn/fzf.vim'
 
   Plug 'rust-lang/rust.vim', {'for' : 'rust' }
-  Plug 'autozimu/LanguageClient-neovim', {
-        \ 'branch': 'next',
-        \ 'do': 'bash install.sh',
-        \ }
+  "Plug 'autozimu/LanguageClient-neovim', {
+  "      \ 'branch': 'next',
+  "      \ 'do': 'bash install.sh',
+  "      \ }
   Plug 'elixir-editors/vim-elixir',  { 'for' : ['elixir', 'eelixir'] }
 
   Plug 'pangloss/vim-javascript', { 'for' : 'javascript' }
@@ -138,7 +138,7 @@ if $TERM_PROGRAM == "iTerm.app"
   call one#highlight('DiffLine',   '', 16, 'none')
   call one#highlight('DiffRemoved','', 16, 'none')
 else
-  colorscheme OceanicNext
+  silent! colorscheme OceanicNext
   set background=dark
   let g:airline_theme='oceanicnext'
 endif
